@@ -288,7 +288,7 @@ body
 .collection__body 
     display: flex
     justify-content: space-between
-    gap: 10px
+    gap: 20px
 .collection__body__item 
     display: flex
     flex-direction: column
@@ -308,19 +308,17 @@ body
     gap: 10px
     margin-bottom: 15px
 .other__img__wrap
-    max-width: 100px
-    max-height: 100px
+    max-height: clamp(80px, calc(80px + (100 - 80) * ((100vw - 875px) / (1280 - 875))), 100px)
+    max-width: clamp(80px, calc(80px + (100 - 80) * ((100vw - 875px) / (1280 - 875))), 100px)
     border-radius: 25px 
     overflow: hidden
     img
         width: 100%
-        // max-width: 100px
         height: 100%
-        // max-height: 100px
         object-fit: cover
 .btn_style 
-    width: 100px
-    height: 100px
+    width: clamp(80px, calc(80px + (100 - 80) * ((100vw - 875px) / (1280 - 875))), 100px)
+    height: clamp(80px, calc(80px + (100 - 80) * ((100vw - 875px) / (1280 - 875))), 100px)
 .section-card__title 
 
 .section-card__subtitle 

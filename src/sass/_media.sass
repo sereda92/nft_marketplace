@@ -18,6 +18,16 @@
         display: none
     .burger__btn
         display: flex
+    
+    .item__three
+        display: none
+
+    .other__img__wrap
+        max-height: clamp(70px, calc(70px + (80 - 70) * ((100vw - 540px) / (875 - 540))), 80px)
+        max-width: clamp(70px, calc(70px + (80 - 70) * ((100vw - 540px) / (875 - 540))), 80px)
+    .btn_style 
+        width: clamp(70px, calc(70px + (80 - 70) * ((100vw - 540px) / (875 - 540))), 80px)
+        height: clamp(70px, calc(70px + (80 - 70) * ((100vw - 540px) / (875 - 540))), 80px)
 
 @media screen and (max-width: 768px)
 
@@ -42,6 +52,12 @@
     .section-card__subtitle
         p
             font-size: 22px
+    .item__two
+        display: none
+    .collection__body
+        justify-content: center
+    .collection__title
+        text-align: center
 
 @media screen and (max-width: 375px)
 
