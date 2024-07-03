@@ -1,0 +1,273 @@
+@import './blocks/*.sass'
+
+
+//-------------------
+html 
+    scroll-behavior: smooth
+a
+    text-decoration: none
+    color: $color-white
+//----font-----
+// Light: font-weight: 300
+// Normal (Regular): font-weight: 400
+// Medium: font-weight: 500
+// Semi Bold (Demi Bold): font-weight: 600
+// Bold: font-weight: 700
+// Extra Bold (Ultra Bold): font-weight: 800
+// Black (Heavy): font-weight: 900
+
+// .work-sans-<uniquifier>
+//   font-family: "Work Sans", sans-serif
+//   font-optical-sizing: auto
+//   font-weight: <weight>
+//   font-style: normal
+
+// .space-mono-regular 
+//     font-family: "Space Mono", monospace
+//     font-weight: 400
+//     font-style: normal
+
+
+// .space-mono-bold 
+//     font-family: "Space Mono", monospace
+//     font-weight: 700
+//     font-style: normal
+
+
+// .space-mono-regular-italic 
+//     font-family: "Space Mono", monospace
+//     font-weight: 400
+//     font-style: italic
+
+
+// .space-mono-bold-italic 
+//     font-family: "Space Mono", monospace
+//     font-weight: 700
+//     font-style: italic
+
+// @font-face 
+//     font-family: 'icon-font'
+//     src: url('./fonts/icomoon.eot')
+//     src: url('./fonts/icomoon.eot') format('embedded-opentype'),
+//          url('./fonts/icomoon.woff') format('woff'),
+//          url('./fonts/icomoon.ttf') format('truetype')
+    // font-weight: normal
+    // font-style: normal
+
+@font-face 
+    font-family: 'icomoon'
+    src:  url('/fonts/icomoon.eot')
+    src:  url('/fonts/icomoon.ttf') format('truetype')
+    src:  url('/fonts/icomoon.woff') format('woff')
+    src:  url('/fonts/icomoon.svg') format('svg')
+
+[class^="icon-"], [class*=" icon-"]
+    font-family: 'icomoon' !important
+    speak: never
+    font-style: normal
+    font-weight: normal
+    font-variant: normal
+    text-transform: none
+    line-height: 1
+    font-size: 32px
+    // color: #fff
+
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+.cl-a259ff
+    color: $color-A259FF
+
+.icon-Storefront
+    &::before
+        content: "\e909"
+
+.icon-TrendUp
+    &::before 
+        content: "\e900"
+
+.icon-TwitterLogo
+    &::before 
+        content: "\e901"
+
+.icon-User
+    &::before 
+        content: "\e902"
+
+.icon-UserCircle
+    &::before 
+        content: "\e903"
+
+.icon-Wallet
+    &::before 
+        content: "\e904"
+
+.icon-YoutubeLogo
+    &::before 
+        content: "\e905"
+
+.icon-Plus
+    &::before 
+        content: "\e906"
+
+.icon-Rocket
+    &::before 
+        content: "\e907"
+
+.icon-RocketLaunch
+    &::before 
+        content: "\e908"
+
+.icon-MagnifyingGlass
+    &::before 
+        content: "\e90a"
+
+.icon-Eye
+    &::before 
+        content: "\e90b"
+
+.icon-EyeSlash
+    &::before 
+        content: "\e90c"
+
+.icon-Globe
+    &::before 
+        content: "\e90d"
+
+.icon-InstagramLogo
+    &::before 
+        content: "\e90e"
+
+.icon-List
+    &::before 
+        content: "\e90f"
+
+.icon-LockKey
+    &::before 
+        content: "\e910"
+
+.icon-EnvelopeSimple
+    &::before 
+        content: "\e911"
+
+.icon-DiscordLogo
+    &::before 
+        content: "\e912"
+
+.icon-Copy
+    &::before 
+        content: "\e913"
+
+.icon-ArrowRight
+    &::before 
+        content: "\e914"
+
+.icon-ArrowLeft
+    &::before 
+        content: "\e915"
+        
+//-------------
+h1
+    font-size: 67px
+h2
+    font-size: 51px
+h3
+    font-size: 38px
+h4
+    font-size: 28px
+h5
+    font-size: 22px
+
+.caption
+    font-size: 12px
+//-------------
+body
+    font-weight: 400
+    font-style: normal
+    font-size: 16px
+    font-family: "Work Sans", sans-serif !important
+    color: #fff
+
+.wrapper
+    max-width: 1280px
+    margin: 0 auto
+    min-height: 100%
+    display: flex
+    flex-direction: column
+    background-color: #2B2B2B
+
+.main
+    flex: 1 1 auto
+    margin: 80px 0 0 0
+
+.__container
+    max-width: 1050px
+    margin: 0 auto
+
+.btn_style
+    color: #fff
+    font-family: "Work Sans", sans-serif
+    font-weight: 600
+    background-color: $color-A259FF
+    border-radius: 20px
+    cursor: pointer
+    display: flex
+    gap: 12px
+    justify-content: center
+    align-items: center
+//--------------first-section---------------------
+.main__section
+    display: flex
+    gap: 30px
+.main__section-title
+    width: 50%
+    h1
+        font-weight: 600
+        margin-bottom: 20px
+        line-height: 110%
+    h5
+        margin-bottom: 30px
+        line-height: 160%
+    button
+        width: 224px
+        height: 60px
+        margin-bottom: 30px
+    .icon-RocketLaunch
+        font-size: 20px !important
+.main__section-card
+    background-color: #3B3B3B
+    width: 50%
+    height: 510px
+    border-radius: 25px
+    overflow: hidden
+.section-card__img 
+.section-card__title
+    // margin: 22px 0 0 0 
+    display: flex
+    flex-direction: column
+    padding: 22px 20px
+    gap: 10px
+.section-card__subtitle
+    display: flex
+    align-items: center
+    gap: 12px
+    img
+        width: 24px
+        height: 24px
+.main__section-list
+    display: flex
+    div
+        width: 150px
+        min-height: 70px
+        h4
+            font-weight: 700
+            line-height: 140%
+        p
+            line-height: 160%
+//------------------------------------
+
+
+@import './blocks/_footer'
+@import './_media'
+// @import './_icon-style.sass'
+
