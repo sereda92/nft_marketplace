@@ -2,5 +2,97 @@
     
     
 .footer
-    height: 100px
-    background-color: #2B2B2B
+    // height: 100px
+    padding: 40px 0 
+    background-color: $color-3B3B3B
+.footer__main
+    display: flex
+    justify-content: space-between
+    gap: 15px
+    border-bottom: 1px solid $color-858584
+    padding-bottom: 30px
+.footer__item__title
+    display: flex
+    align-items: center
+    margin-bottom: 30px
+    .icon-Storefront
+        font-size: 32px
+.sub__footer
+    padding: 20px 0 0 0
+    p
+        font-size: 12px
+.footer__logo-img
+    margin-left: 12px
+    height: 15px
+    width: 200px
+    height: 20px
+
+.footer__item_main
+    overflow: hidden
+    p
+        color: #CCCCCC
+        &:nth-child(1)
+            margin-bottom: 20px
+        &:nth-child(2)
+            margin-bottom: 15px
+
+.footer_soc_link
+    width: 32px
+    height: 32px
+    transition: all .4s ease
+    position: relative
+    overflow: hidden
+    .icon_grey
+        position: absolute
+        top: 0
+        transition: all .4s ease
+    .icon_color
+        position: absolute
+        top: 34px
+        width: 32px
+        height: 32px
+        transition: all .4s ease
+    &:hover
+        .icon_grey
+            top: -33px
+        .icon_color
+            top: 0
+
+.footer__item__soc
+    display: flex
+    gap: 10px
+    .icon-DiscordLogo,
+    .icon-YoutubeLogo,
+    .icon-InstagramLogo
+        color: $color-858584
+        font-size: 32px
+    .twiter-icon
+        width: 32px
+        height: 32px
+
+
+.foot__it-1
+    width: 327px
+    padding: 0 84px 0 0
+
+.footer__item__title
+    font-weight: 600
+    font-family: "Space Mono", monospace
+
+.footer__item_main
+.footer__nav
+.footer__nav__list
+    display: flex
+    flex-direction: column
+    gap: 20px
+.footer__nav__item
+.footer__nav__link
+    color: #CCCCCC
+
+.foot__it-2
+    width: 240px
+
+
+.footer__form-title
+    p
+        color: #CCCCCC

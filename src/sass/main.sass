@@ -171,9 +171,10 @@ h1
     // font-size: 67px
     font-size: clamp(28px, calc(28px + (67 - 28) * ((100vw - 320px) / (1280 - 320))), 67px)
 h2
-    font-size: 51px
+    font-size: clamp(38px, calc(38px + (51 - 38) * ((100vw - 320px) / (1280 - 320))), 51px)
 h3
     font-size: clamp(28px, calc(28px + (38 - 28) * ((100vw - 320px) / (1280 - 320))), 38px)
+    font-weight: 600
 h4
     // font-size: 28px
     font-size: clamp(22px, calc(22px + (28 - 22) * ((100vw - 320px) / (1280 - 320))), 28px)
@@ -421,10 +422,20 @@ body
     overflow: hidden
     position: relative
     // flex: 1 1 150px
+    &:hover
+        .categories__item_img
+            filter: blur(0)
+        .icon_wrap
+            top: -20%
+        .categories__item-title
+            h5
+                color: $color-A259FF
 .categories__title
     margin-bottom: 40px
 .categories__item-back
     position: relative
+    width: clamp(150px, calc(150px + (240 - 150) * ((100vw - 875px) / (1280 - 875))), 240px)
+    height: clamp(142px, calc(142px + (240 - 142) * ((100vw - 875px) / (1280 - 875))), 240px)
 .categories__main
     display: grid
     grid-template-columns: repeat(4, 1fr)
@@ -436,6 +447,7 @@ body
 .back_img_wrap
     overflow: hidden
 .categories__item_img
+    transition: all .4s ease
     // position: relative
     width: 100%
     filter: blur(5px)
@@ -449,12 +461,275 @@ body
     top: 50%
     left: 50%
     transform: translate(-50%, -50%)
+    transition: all .4s ease
 
 
 .categories__item-title
     position: absolute
+    
     bottom: 25px
-    left: 30px
+    // left: 30px
+    left: clamp(15px, calc(15px + (30 - 15) * ((100vw - 1280px) / (1280 - 768))), 30px)
+    h5
+        transition: all .4s ease
+
+// --------------------discover----------
+.discover_title
+    display: flex
+    justify-content: space-between
+    margin-bottom: 60px
+    gap: 30px
+
+.discover
+    padding: clamp(40px, calc(40px + (80 - 40) * ((100vw - 320px) / (1280 - 320))), 80px) 0
+    .btn_style
+        width: 187px
+        height: 60px
+        background: none
+        border: 1px solid $color-A259FF
+    .icon-Eye
+        font-size: 20px
+        color: $color-A259FF
+.discover__info
+    padding: 20px 30px
+
+.discover_main
+    display: flex
+    justify-content: space-between
+    gap: 15px
+.discover__item
+    width: 330px
+    background-color: #3B3B3B
+    border-radius: 25px
+    overflow: hidden
+    .section-card__title
+        padding: 20px 30px
+    .section-card__subtitle
+        font-family: "Space Mono", monospace
+        p
+            font-size: 16px
+    .item__img
+        img
+            width: 100%
+            object-fit: cover
+.__info-title
+    display: flex
+    justify-content: space-between
+    p
+        font-size: 12px
+        color: $color-858584
+        font-family: "Space Mono", monospace
+        margin-bottom: 8px
+.__info-main
+    display: flex
+    justify-content: space-between
+
+
+
+//------------mashroom---------------
+
+.mashroom
+    position: relative
+    .btn_style
+        background-color: #fff
+        width: 198px
+        height: 60px
+        padding: 20px 50px
+        color: #000
+        gap: 10px
+        .icon-Eye
+            color: $color-A259FF
+.backgroung__mashroom
+    position: relative
+    width: 100%
+    height: 100vh
+    overflow: hidden
+    position: relative
+
+    &::after
+        content: ''
+        position: absolute
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        display: block
+        background: rgb(162,89,255)
+        background: linear-gradient(180deg, rgba(162,89,255,0) 0%, rgba(162,89,255,1) 100%)
+        // filter: blur(5px)
+        // filter: blur(5px)
+    img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        position: absolute
+        top: 0
+        left: 0
+
+.mashroom_one
+    display: block
+.mashroom_two
+    display: none
+.mashroom__body
+    width: 100%
+    position: absolute
+    // bottom: 60px
+    bottom: clamp(40px, calc(40px + (80 - 40) * ((100vw - 320px) / (1280 - 320))), 80px)
+    left: 0
+    .__container
+        display: flex
+        justify-content: space-between
+        align-items: end
+        gap: 20px
+.mashroom__user
+    display: inline-flex
+    gap: 12px
+    align-items: center
+    padding: 10px 20px
+    // width: 151px
+    // height: 44px
+    background-color: #3B3B3B
+    border-radius: 20px
+    margin-bottom: 30px
+    img
+        width: 24px
+        height: 24px
+
+.mashroom__title
+    margin-bottom: 30px
+    h2
+        font-weight: 600
+
+
+
+
+
+.mashroom__clock
+    width: 295px
+    padding: 30px
+    background-color: rgba(59, 59, 59, .5)
+    border-radius: 20px
+    .clock__dots
+        font-size: 28px
+        font-family: "Space Mono", monospace
+        margin-top: 5px
+    #timeToStart
+        font-size: 12px
+        font-family: "Space Mono", monospace
+        margin-bottom: 10px
+    #timeControl
+        display: flex
+        justify-content: space-between
+
+
+    li
+        display: flex
+        flex-direction: column
+        gap: 10px
+        list-style-type: none
+        font-size: 12px
+        font-family: "Space Mono", monospace
+    li 
+        span
+            font-family: "Space Mono", monospace
+            display: block
+            font-size: 38px
+//-----------work__section------------
+.work__section
+    padding: clamp(40px, calc(40px + (80 - 40) * ((100vw - 320px) / (1280 - 320))), 80px) 0
+.work_title
+    margin-bottom: 48px
+    .title__wrap
+        h3
+            margin-bottom: 10px
+        h5
+            font-family: "Space Mono", monospace
+.work__body
+    display: flex
+    justify-content: space-between
+    gap: 15px
+
+.work__item__img
+    img
+        width: 100%
+
+.work__item
+    background-color: $color-3B3B3B
+    border-radius: 20px
+    padding: 10px 30px 30px 30px
+    width: 33.33%
+    display: flex
+    flex-direction: column
+    align-items: center
+.work__item__title
+    margin-top: 20px
+    h5
+        font-weight: 600
+        text-align: center
+        margin-bottom: 10px
+    p
+        text-align: center
+        line-height: 140%
+//-------------weeklyDigest--------------
+.weeklyDigest
+    padding-top: 40px 
+    padding-bottom: clamp(40px, calc(40px + (80 - 40) * ((100vw - 320px) / (1280 - 320))), 80px)
+.weeklyDigest__form-title
+    .title__wrap
+        h3
+            margin-bottom: 10px
+        h5
+            font-family: "Space Mono", monospace
+            line-height: 140%
+            margin-bottom: 40px
+
+.weeklyDigest__wrap
+    background-color: $color-3B3B3B
+    border-radius: 20px
+    // min-height: 430px
+    padding: 40px clamp(40px, calc(40px + (60 - 40) * ((100vw - 768px) / (1280 - 768))), 60px) 30px clamp(30px, calc(30px + (60 - 30) * ((100vw - 768px) / (1280 - 768))), 60px)
+    display: flex
+    justify-content: space-between
+    gap: 20px
+.weeklyDigest_img
+    border-radius: 30px
+    overflow: hidden
+    object-fit: cover
+    height: auto
+    img
+        width: 100%
+        height: 100%
+.weeklyDigest__form__wrap
+    width: 425px
+.__form
+    margin-top: 40px
+    position: relative
+    input
+        width: 100%
+        padding: 19px  clamp(140px, calc(140px + (200 - 140) * ((100vw - 875px) / (1280 - 875))), 200px) 19px 20px
+        border-radius: 20px
+        &::placeholder
+            font-size: 16px
+            color: #000
+    button
+        position: absolute
+        top: 0
+        right: 0
+        height: 100%
+        padding: 19px clamp(19px, calc(19px + (50 - 19) * ((100vw - 875px) / (1280 - 875))), 50px)
+        background-color: $color-A259FF
+        border-radius: 20px
+        display: inline-flex
+        align-items: center
+        gap: 12px
+        color: #fff
+        font-weight: 600
+        .icon-EnvelopeSimple
+            color: #fff
+            font-size: 20px
+
+
+
 
 
 
@@ -468,6 +743,7 @@ body
 
 
 //------------------------------------
+
 
 
 @import './blocks/_footer'

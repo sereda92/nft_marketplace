@@ -5,7 +5,6 @@
 .header
     display: flex
     justify-content: space-between
-    // height: 100px
     align-items: center
     background-color: #2B2B2B
     padding: 20px clamp(20px, calc(20px + (50 - 20) * ((100vw - 875px) / (1280 - 875))),50px) 
@@ -26,32 +25,63 @@
     display: flex
     align-items: center
     gap: 10px
-.header__item
 
-    // width: 100%
-    // padding: 12px 20px
+
+.header__item
+    position: relative
+    transition: all .4s ease
+.btn__hover
+    position: absolute
+    display: block
+    height: 150px
+    width: 30px
+    background: $color-A259FF
+    margin-top: -10%
+    margin-left: -200%
+    transform: rotateZ(45deg) 
+    
+
+.header__button
+    overflow: hidden
+    z-index: 30
+    position: relative
+    transition: all .4s ease
+.hidden-hover
+    transition: all .3s ease-in-out
+    overflow: hidden
+    &:hover
+        .header__button
+            background: transparent
+            border: solid $color-A259FF 3px
+
+.header__item
+    &:hover
+        .btn__hover 
+            -webkit-animation: line .5s ease-out forwards
+            -webkit-animation-delay: .2s
+
+
+@keyframes line
+    0% 
+        margin-top: -10%
+        margin-left: -200%
+    
+    100%
+        margin-top: -10%
+        margin-left: 200%
+
+
 .header__link 
     font-weight: 600
     padding: 12px clamp(10px, calc(10px + (20 - 10)* ((100vw - 875px) / (1280 - 875))), 20px)
     transition: all .4s ease
     border: 1px solid transparent
-    &:hover
-        border: 1px solid $color-A259FF
+
+
+// ------------------------------------------------------------------
 .header__button 
-    // color: #fff
-    // font-family: "Work Sans", sans-serif
-    // font-weight: 600
-    // width: 152px
     width: clamp(110px, calc(110px + (152 - 110) * ((100vw - 875px) / (1280 - 875))), 152px)
     height: 60px
-    // justify-content: center
-    // padding: 20px 30px
-    // display: flex
-    // align-items: center
-    // gap: 12px
-    // background-color: $color-A259FF
-    // border-radius: 20px
-    // cursor: pointer
     .icon-User
         font-size: 20px
 
