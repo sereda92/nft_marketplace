@@ -90,6 +90,30 @@
                 
 
 @media screen and (max-width: 768px)
+    .signUp__form_block
+        padding: 0 0 0 0
+    .signUp__form_title
+        h4
+            font-size: 16px
+    .signUp__form
+        .username,
+        .email,
+        .password,
+        button
+            max-width: 100%
+    .signUp__page
+        flex-direction: column
+        gap: 30px
+    .signUp__form_block
+        padding: 0 30px
+    .signUp__img
+        // max-width: 375px
+        max-width: clamp(320px, calc(320px + (768 - 320) * ((100vw - 320px) / (768 - 320))), 768px)
+        // height: 232px
+        height: clamp(232px, calc(232px + (500 - 232) * ((100vw - 320px) / (768 - 320))), 500px)
+        img
+            width: clamp(320px, calc(320px + (768 - 320) * ((100vw - 320px) / (768 - 320))), 768px)
+            height: 100%
     .categories__item-title
         left: 10px
     .categories__main

@@ -724,26 +724,71 @@ body
         gap: 12px
         color: #fff
         font-weight: 600
+        cursor: pointer
         .icon-EnvelopeSimple
             color: #fff
             font-size: 20px
 
 
 
+//--------------sign-up----------------------
+.signUp__page
+    display: flex
+    gap: 60px
+    align-items: center
 
+.signUp__img
+    max-width: clamp(397px, calc(397px + (610 - 397) * ((100vw - 768px) / (1280 - 768))), 610px)
+    img
+        width: 100%
+.signUp__form_block
+    max-width: 460px
+    width: 100%
+    margin-bottom: 40px
+    padding: 0 20px 0 0
+.signUp__form_title
+    margin-bottom: 40px
+    h2
+        margin-bottom: 20px
+    h4
+        font-size: 22px
+        line-height: 160%
 
-
-
-
-
-
-
-
-
-
-
-//------------------------------------
-
+.signUp__form
+    display: flex
+    flex-direction: column
+    gap: 15px
+    .username,
+    .email,
+    .password  
+        max-width: 330px
+        // display: flex
+        position: relative
+        border-radius: 20px
+        span
+            position: absolute
+            top: 13px
+            left: 20px
+            font-size: 20px  
+            color: #BDBDBD
+    input
+        padding: 13px 20px 13px 52px
+        width: 100%
+        border-radius: 20px
+        &:focus
+            border: none
+            outline: none
+    button
+        margin-top: 30px
+        font-weight: 600
+        font-size: 16px
+        color: #fff
+        max-width: 330px
+        width: 100%
+        border-radius: 20px
+        background-color: $color-A259FF
+        min-height: 46px
+// ----------------------------------------------
 
 
 @import './blocks/_footer'
