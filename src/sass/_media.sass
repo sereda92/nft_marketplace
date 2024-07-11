@@ -90,9 +90,13 @@
                 
 
 @media screen and (max-width: 768px)
-    .signUp__form_block
+    .marketplace_product__wrap
+        justify-content: center
+    .signUp__form_block,
+    .wallet__block
         padding: 0 0 0 0
-    .signUp__form_title
+    .signUp__form_title,
+    .wallet_title
         h4
             font-size: 16px
     .signUp__form
@@ -101,12 +105,15 @@
         .password,
         button
             max-width: 100%
-    .signUp__page
+    .signUp__page,
+    .wallet__page
         flex-direction: column
         gap: 30px
-    .signUp__form_block
+    .signUp__form_block,
+    .wallet__block
         padding: 0 30px
-    .signUp__img
+    .signUp__img,
+    .wallet__img
         // max-width: 375px
         max-width: clamp(320px, calc(320px + (768 - 320) * ((100vw - 320px) / (768 - 320))), 768px)
         // height: 232px
@@ -234,6 +241,9 @@
         border-radius: 35px
 
 @media screen and (max-width: 375px)
+    #search-input
+        &::placeholder
+            font-size: 14px
     .categories__item-title
         bottom: 15px
     .categories__main

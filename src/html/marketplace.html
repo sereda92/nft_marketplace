@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>main page</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('blocks/header.html')
+        <main class="main">
+            <section class="marketplace__page">
+                <div class="marketplace__title_wrap">
+                    <div class="__container">
+                        <div class="marketplace__title">
+                            <h2>Browse Marketplace</h2>
+                            <h5>Browse through more than 50k NFTs on the NFT Marketplace.</h5>
+                        </div>
+                        <div class="input_search_wrap">
+                            <span class="icon-MagnifyingGlass"></span>
+                            <input type="text" id="search-input" placeholder="Search your favourite NFTs">
+                        </div>
+                    </div>
+                </div>
+                <div class="__container">
+                    <div class="marketplace__search__wrap">
+                        <button id="all-products-btn" class="filter-btn filter-active">NFTs<span
+                                id="all-products-count"></span></button>
+                        <button id="favorites-btn" class="filter-btn">Collections<span
+                                id="favorites-count"></span></button>
+                    </div>
+                </div>
+                <div id="products-container">
+                    <div class="__container">
+                        <div class="marketplace_product__wrap">
+                            <!-- ---------1---------- -->
+                            <div class=" product-item" data-name="Product 2" data-favorite="false">
+                                <div class="item__img">
+                                    <img src="./img/marketplace/1.jpg" alt="">
+                                </div>
+                                <div class="section-card__title">
+                                    <h5>Magic Mushroom 0325</h5>
+                                    <div class="section-card__subtitle">
+                                        <img src="./img/avatars/avatar-7.png" alt="avatar-7">
+                                        <p>Shroomie</p>
+                                    </div>
+                                </div>
+                                <div class="discover__info">
+                                    <div class="__info-title">
+                                        <p>Price</p>
+                                        <p>Highest Bid</p>
+                                    </div>
+                                    <div class="__info-main">
+                                        <p>1.63 ETH</p>
+                                        <p>0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----------2--------- -->
+                            <div class=" product-item" data-name="Product 2" data-favorite="true">
+                                <div class="item__img">
+                                    <img src="./img/marketplace/2.jpg" alt="">
+                                </div>
+                                <div class="section-card__title">
+                                    <h5>Happy Robot 032</h5>
+                                    <div class="section-card__subtitle">
+                                        <img src="./img/avatars/avatar-14.png" alt="avatar-14">
+                                        <p>BeKind2Robots</p>
+                                    </div>
+                                </div>
+                                <div class="discover__info">
+                                    <div class="__info-title">
+                                        <p>Price</p>
+                                        <p>Highest Bid</p>
+                                    </div>
+                                    <div class="__info-main">
+                                        <p>1.63 ETH</p>
+                                        <p>0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ---------3---------- -->
+                            <div class=" product-item" data-name="Product 2" data-favorite="false">
+                                <div class="item__img">
+                                    <img src="./img/marketplace/3.jpg" alt="">
+                                </div>
+                                <div class="section-card__title">
+                                    <h5>Happy Robot 024</h5>
+                                    <div class="section-card__subtitle">
+                                        <img src="./img/avatars/avatar-14.png" alt="avatar-14">
+                                        <p>BeKind2Robots</p>
+                                    </div>
+                                </div>
+                                <div class="discover__info">
+                                    <div class="__info-title">
+                                        <p>Price</p>
+                                        <p>Highest Bid</p>
+                                    </div>
+                                    <div class="__info-main">
+                                        <p>1.63 ETH</p>
+                                        <p>0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ---------4---------- -->
+                            <div class=" product-item" data-name="Product 2" data-favorite="false">
+                                <div class="item__img">
+                                    <img src="./img/marketplace/4.jpg" alt="">
+                                </div>
+                                <div class="section-card__title">
+                                    <h5>Designer Bear</h5>
+                                    <div class="section-card__subtitle">
+                                        <img src="./img/avatars/avatar-6.png" alt="avatar-6">
+                                        <p>Mr Fox</p>
+                                    </div>
+                                </div>
+                                <div class="discover__info">
+                                    <div class="__info-title">
+                                        <p>Price</p>
+                                        <p>Highest Bid</p>
+                                    </div>
+                                    <div class="__info-main">
+                                        <p>1.63 ETH</p>
+                                        <p>0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----------5--------- -->
+                            <div class=" product-item" data-name="Product 2" data-favorite="true">
+                                <div class="item__img">
+                                    <img src="./img/marketplace/5.jpg" alt="">
+                                </div>
+                                <div class="section-card__title">
+                                    <h5>Colorful Dog 0356</h5>
+                                    <div class="section-card__subtitle">
+                                        <img src="./img/avatars/avatar-11.png" alt="avatar-11">
+                                        <p>Keepitreal</p>
+                                    </div>
+                                </div>
+                                <div class="discover__info">
+                                    <div class="__info-title">
+                                        <p>Price</p>
+                                        <p>Highest Bid</p>
+                                    </div>
+                                    <div class="__info-main">
+                                        <p>1.63 ETH</p>
+                                        <p>0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----------6--------- -->
+                            <div class=" product-item" data-name="Product 2" data-favorite="false">
+                                <div class="item__img">
+                                    <img src="./img/marketplace/6.jpg" alt="">
+                                </div>
+                                <div class="section-card__title">
+                                    <h5>Dancing Robot 0312</h5>
+                                    <div class="section-card__subtitle">
+                                        <img src="./img/avatars/avatar-8.png" alt="avatar-8">
+                                        <p>Robotica</p>
+                                    </div>
+                                </div>
+                                <div class="discover__info">
+                                    <div class="__info-title">
+                                        <p>Price</p>
+                                        <p>Highest Bid</p>
+                                    </div>
+                                    <div class="__info-main">
+                                        <p>1.63 ETH</p>
+                                        <p>0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----------7--------- -->
+                            <div class=" product-item" data-name="Product 2" data-favorite="false">
+                                <div class="item__img">
+                                    <img src="./img/marketplace/7.jpg" alt="">
+                                </div>
+                                <div class="section-card__title">
+                                    <h5>Cherry Blossom Girl 035</h5>
+                                    <div class="section-card__subtitle">
+                                        <img src="./img/avatars/avatar-16.png" alt="avatar-16">
+                                        <p>MoonDancer</p>
+                                    </div>
+                                </div>
+                                <div class="discover__info">
+                                    <div class="__info-title">
+                                        <p>Price</p>
+                                        <p>Highest Bid</p>
+                                    </div>
+                                    <div class="__info-main">
+                                        <p>1.63 ETH</p>
+                                        <p>0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- --------8----------- -->
+                            <div class=" product-item" data-name="Product 2" data-favorite="true">
+                                <div class="item__img">
+                                    <img src="./img/marketplace/8.jpg" alt="">
+                                </div>
+                                <div class="section-card__title">
+                                    <h5>Space Travel</h5>
+                                    <div class="section-card__subtitle">
+                                        <img src="./img/avatars/avatar-20.png" alt="avatar-20">
+                                        <p>NebulaKid</p>
+                                    </div>
+                                </div>
+                                <div class="discover__info">
+                                    <div class="__info-title">
+                                        <p>Price</p>
+                                        <p>Highest Bid</p>
+                                    </div>
+                                    <div class="__info-main">
+                                        <p>1.63 ETH</p>
+                                        <p>0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ----------9--------- -->
+                            <div class=" product-item" data-name="Product 2" data-favorite="false">
+                                <div class="item__img">
+                                    <img src="./img/marketplace/9.jpg" alt="">
+                                </div>
+                                <div class="section-card__title">
+                                    <h5>Sunset Dimension</h5>
+                                    <div class="section-card__subtitle">
+                                        <img src="./img/avatars/avatar-10.png" alt="avatar-10">
+                                        <p>Animakid</p>
+                                    </div>
+                                </div>
+                                <div class="discover__info">
+                                    <div class="__info-title">
+                                        <p>Price</p>
+                                        <p>Highest Bid</p>
+                                    </div>
+                                    <div class="__info-main">
+                                        <p>1.63 ETH</p>
+                                        <p>0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ---------10---------- -->
+                            <div class=" product-item" data-name="Product 2" data-favorite="false">
+                                <div class="item__img">
+                                    <img src="./img/marketplace/10.jpg" alt="">
+                                </div>
+                                <div class="section-card__title">
+                                    <h5>Desert Walk</h5>
+                                    <div class="section-card__subtitle">
+                                        <img src="./img/avatars/avatar-19.png" alt="avatar-19">
+                                        <p>Catch 22</p>
+                                    </div>
+                                </div>
+                                <div class="discover__info">
+                                    <div class="__info-title">
+                                        <p>Price</p>
+                                        <p>Highest Bid</p>
+                                    </div>
+                                    <div class="__info-main">
+                                        <p>1.63 ETH</p>
+                                        <p>0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ---------11---------- -->
+                            <div class=" product-item" data-name="Product 2" data-favorite="false">
+                                <div class="item__img">
+                                    <img src="./img/marketplace/11.jpg" alt="">
+                                </div>
+                                <div class="section-card__title">
+                                    <h5>IceCream Ape 0324</h5>
+                                    <div class="section-card__subtitle">
+                                        <img src="./img/avatars/avatar-17.png" alt="avatar-17">
+                                        <p>Ice Ape Club</p>
+                                    </div>
+                                </div>
+                                <div class="discover__info">
+                                    <div class="__info-title">
+                                        <p>Price</p>
+                                        <p>Highest Bid</p>
+                                    </div>
+                                    <div class="__info-main">
+                                        <p>1.63 ETH</p>
+                                        <p>0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ---------12---------- -->
+                            <div class=" product-item" data-name="Product 2" data-favorite="true">
+                                <div class="item__img">
+                                    <img src="./img/marketplace/12.jpg" alt="">
+                                </div>
+                                <div class="section-card__title">
+                                    <h5>Colorful Dog 0344</h5>
+                                    <div class="section-card__subtitle">
+                                        <img src="./img/avatars/avatar-15.png" alt="avatar-15">
+                                        <p>PuppyPower</p>
+                                    </div>
+                                </div>
+                                <div class="discover__info">
+                                    <div class="__info-title">
+                                        <p>Price</p>
+                                        <p>Highest Bid</p>
+                                    </div>
+                                    <div class="__info-main">
+                                        <p>1.63 ETH</p>
+                                        <p>0.33 wETH</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </main>
+        @@include('blocks/footer.html')
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            const allProducts = $('.product-item');
+
+            function filterProducts(filter = 'all', query = '') {
+                let filteredProducts = allProducts;
+
+                if (filter === 'favorites') {
+                    filteredProducts = filteredProducts.filter(function () {
+                        return $(this).data('favorite') === true;
+                    });
+                }
+
+                if (query) {
+                    filteredProducts = filteredProducts.filter(function () {
+                        const name = $(this).data('name').toLowerCase();
+                        return name.includes(query.toLowerCase());
+                    });
+                }
+
+                displayProducts(filteredProducts);
+                updateCounts();
+                updateActiveButton(filter);
+            }
+
+            function displayProducts(products) {
+                allProducts.addClass('hidden'); // Hide all products initially
+                products.removeClass('hidden'); // Show only the filtered products
+            }
+
+            function updateCounts() {
+                const allCount = allProducts.length;
+                const favoritesCount = allProducts.filter('[data-favorite="true"]').length;
+
+                $('#all-products-count').text(allCount);
+                $('#favorites-count').text(favoritesCount);
+            }
+
+            function updateActiveButton(activeFilter) {
+                $('.filter-btn').removeClass('filter-active'); // Remove active class from all buttons
+                if (activeFilter === 'favorites') {
+                    $('#favorites-btn').addClass('filter-active'); // Add active class to favorites button
+                } else {
+                    $('#all-products-btn').addClass('filter-active'); // Add active class to all products button
+                }
+            }
+
+            $('#all-products-btn').click(function () {
+                filterProducts('all');
+            });
+
+            $('#favorites-btn').click(function () {
+                filterProducts('favorites');
+            });
+
+            $('#search-input').on('input', function() {
+                const query = $(this).val();
+                const activeFilter = $('.filter-btn.active').attr('id') === 'favorites-btn' ? 'favorites' : 'all';
+                filterProducts(activeFilter, query);
+            });
+
+            filterProducts(); // Initial load
+        });
+    </script>
+    <script src="/js/index.bundle.js"></script>
+</body>
+
+</html>

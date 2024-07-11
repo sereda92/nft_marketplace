@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>main page</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        @@include('blocks/header.html')
+        <main class="main">
+            <section class="wallet__page">
+                <div class="wallet__img">
+                    <img src="./img/cosmos.jpg" alt="cosmos">
+                </div>
+                <div class="wallet__block">
+                    <div class="wallet_title">
+                        <h2>Connect wallet</h2>
+                        <h4>Choose a wallet you want to connect. There are several wallet providers.</h4>
+                    </div>
+                    <div class="wallet__block_items">
+                        <div class="wallet__block_item">
+                            <a href="#" class="wallet__block_link">
+                                <img src="./img/icons/Metamask.png" alt="Metamask">
+                                Metamask</a>
+                        </div>
+                        <div class="wallet__block_item">
+                            <a href="#" class="wallet__block_link">
+                                <img src="./img/icons/WalletConnect.png" alt="WalletConnect">
+                                Wallet Connect</a>
+                        </div>
+                        <div class="wallet__block_item">
+                            <a href="#" class="wallet__block_link">
+                                <img src="./img/icons/Coinbase.png" alt="Coinbase">
+                                Coinbase</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('blocks/footer.html')
+    </div>
+    <script src="/js/index.bundle.js"></script>
+</body>
+
+</html>
