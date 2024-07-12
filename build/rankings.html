@@ -58,10 +58,15 @@
                     </div>
                     <div class="rankings__list">
                         <div class="filter-buttons">
-                            <button class="filter-btn active" data-filter="today">Today</button>
-                            <button class="filter-btn" data-filter="week">This Week</button>
-                            <button class="filter-btn" data-filter="month">This Month</button>
-                            <button class="filter-btn" data-filter="all">All Time</button>
+                            <button class="filter-btn  _btn_deck active" data-filter="today">Today</button>
+                            <button class="filter-btn _btn_deck " data-filter="week">This Week</button>
+                            <button class="filter-btn _btn_deck " data-filter="month">This Month</button>
+                            <button class="filter-btn _btn_deck " data-filter="all">All Time</button>
+
+                            <button class="filter-btn active _btn_mob" data-filter="today">1d</button>
+                            <button class="filter-btn _btn_mob" data-filter="week">7d</button>
+                            <button class="filter-btn _btn_mob" data-filter="month">30d</button>
+                            <button class="filter-btn _btn_mob" data-filter="all">All Time</button>
                         </div>
                         <div class="rankings__user">
                             <div class="ranking__user_title">
@@ -73,7 +78,9 @@
                             </div>
                             <div id="employee-list">
                                 <div class="employee" data-filter="today">
-                                    <p class="fil__num">1</p>
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">1</p>
+                                    </div>
                                     <div class="fil__artist __block">
                                         <img src="./img/avatars/avatar-1.png" alt="">
                                         <p class="wh_col">Jaydon Ekstrom Bothman</p>
@@ -82,28 +89,254 @@
                                     <p class="fil__sold wh_col">602</p>
                                     <p class="fil__volume wh_col">12.4 ETH</p>
                                 </div>
-                                <div class="employee" data-filter="today">Employee 2 - Today</div>
-                                <div class="employee" data-filter="today">Employee 3 - Today</div>
-                                <div class="employee" data-filter="today">Employee 4 - Today</div>
-                                <div class="employee" data-filter="today">Employee 5 - Today</div>
-    
-                                <div class="employee" data-filter="week">Employee 6 - This Week</div>
-                                <div class="employee" data-filter="week">Employee 7 - This Week</div>
-                                <div class="employee" data-filter="week">Employee 8 - This Week</div>
-                                <div class="employee" data-filter="week">Employee 9 - This Week</div>
-                                <div class="employee" data-filter="week">Employee 10 - This Week</div>
-    
-                                <div class="employee" data-filter="month">Employee 11 - This Month</div>
-                                <div class="employee" data-filter="month">Employee 12 - This Month</div>
-                                <div class="employee" data-filter="month">Employee 13 - This Month</div>
-                                <div class="employee" data-filter="month">Employee 14 - This Month</div>
-                                <div class="employee" data-filter="month">Employee 15 - This Month</div>
-    
-                                <div class="employee" data-filter="all">Employee 16 - All Time</div>
-                                <div class="employee" data-filter="all">Employee 17 - All Time</div>
-                                <div class="employee" data-filter="all">Employee 18 - All Time</div>
-                                <div class="employee" data-filter="all">Employee 19 - All Time</div>
-                                <div class="employee" data-filter="all">Employee 20 - All Time</div>
+                                <!-- -------------------------- -->
+                                <div class="employee" data-filter="today">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">2</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-2.png" alt="">
+                                        <p class="wh_col">Ruben Carder</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- --------------------------------------- -->
+                                <div class="employee" data-filter="today">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">3</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-3.png" alt="">
+                                        <p class="wh_col">Alfredo Septimus</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ------------------------------------------------ -->
+                                <div class="employee" data-filter="today">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">4</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-4.png" alt="">
+                                        <p class="wh_col">Davis Franci</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="today">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">5</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-5.png" alt="">
+                                        <p class="wh_col">Livia Rosser</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="week">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">6</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-6.png" alt="">
+                                        <p class="wh_col">Kianna Donin</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="week">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">7</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-7.png" alt="">
+                                        <p class="wh_col">Phillip Lipshutz</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="week">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">8</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-8.png" alt="">
+                                        <p class="wh_col">Maria Rosser</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="week">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">9</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-9.png" alt="">
+                                        <p class="wh_col">Kianna Stanton</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="week">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">10</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-20.png" alt="">
+                                        <p class="wh_col">Angel Lubin</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="month">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">11</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-13.png" alt="">
+                                        <p class="wh_col">Allison Torff</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="month">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">12</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-14.png" alt="">
+                                        <p class="wh_col">Davis Workman</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="month">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">13</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-15.png" alt="">
+                                        <p class="wh_col">Lindsey Lipshutz</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="month">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">14</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-10.png" alt="">
+                                        <p class="wh_col">Randy Carder</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="month">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">15</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-11.png" alt="">
+                                        <p class="wh_col">Lydia Culhane</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="all">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">16</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-16.png" alt="">
+                                        <p class="wh_col">Rayna Bator</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="all">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">17</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-12.png" alt="">
+                                        <p class="wh_col">Jocelyn Westervelt</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="all">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">18</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-1.png" alt="">
+                                        <p class="wh_col">Marilyn Torff</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="all">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">19</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-20.png" alt="">
+                                        <p class="wh_col">Skylar Levin</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
+                                <div class="employee" data-filter="all">
+                                    <div class="fil__num_wrap">
+                                        <p class="fil__num">20</p>
+                                    </div>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-3.png" alt="">
+                                        <p class="wh_col">Terry Dorwart</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <!-- ----------------------------------- -->
                             </div>
                         </div>
                         

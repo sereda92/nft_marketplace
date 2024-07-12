@@ -1,0 +1,1 @@
+!function(){"use strict";const e=document.querySelector(".burger__btn"),t=document.querySelector(".main");e.addEventListener("click",(()=>{t.classList.toggle("main_active")}))}();

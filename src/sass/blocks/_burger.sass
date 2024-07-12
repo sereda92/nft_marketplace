@@ -1,5 +1,7 @@
-// .burger
-    
+.burger
+    height: 100px
+    position: relative
+    z-index: 100
 
 .burger__btn
     display: none
@@ -17,3 +19,15 @@
         &:nth-child(3)
             width: 13px
             
+
+.main_active
+    // transform: rotate(-90deg)
+    transform: scaleX(-1)
+    // transform-origin: top
+    pointer-events: none
+    opacity: 0
+
+
+.burger__list
+    display: flex
+    flex-direction: column

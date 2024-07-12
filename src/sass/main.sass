@@ -205,6 +205,7 @@ body
 
 .main
     flex: 1 1 auto
+    transition: all 1s ease
     // margin: 80px 0 0 0
     
 
@@ -915,18 +916,24 @@ body
     .filter-buttons 
         display: flex
         justify-content: space-between
+._btn_mob
+    display: none
+    font-size: 16px !important
+    font-weight: 600
 
 .fil__num
-    width: 30px
-    text-align: left
+    width: clamp(24px, calc(24px + (30 - 24) * ((100vw - 320px) / (1280 - 320))), 30px)
+    text-align: center
     color: $color-858584
     
-
-.employee
-    .fil__num
-        padding: 4px 10px
-        background-color: $color-2B2B2B
-        border-radius: 50%
+.fil__num_wrap
+    width: clamp(24px, calc(24px + (30 - 24) * ((100vw - 320px) / (1280 - 320))), 30px)
+    height: clamp(24px, calc(24px + (30 - 24) * ((100vw - 320px) / (1280 - 320))), 30px)
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $color-2B2B2B
+    border-radius: 50%
 
 .fil__artist
     width: 100%
@@ -935,10 +942,10 @@ body
 .__block
     display: flex
     align-items: center
-    gap: 20px
+    gap: clamp(10px, calc(10px + (20 - 10) * ((100vw - 320px) / (1280 - 320))), 20px)
     img
-        width: 60px
-        height: 60px
+        width: clamp(24px, calc(24px + (60 - 24) * ((100vw - 320px) / (1280 - 320))), 60px)
+        height: clamp(24px, calc(24px + (60 - 24) * ((100vw - 320px) / (1280 - 320))), 60px)
 .fil__change
     text-align: left
     width: 160px
@@ -981,8 +988,8 @@ body
 
 .employee 
     display: flex
-    gap: 20px
-    padding: 12px 20px
+    gap: clamp(10px, calc(10px + (20 - 10) * ((100vw - 320px) / (1280 - 320))), 20px)
+    padding: 12px clamp(10px, calc(10px + (20 - 10) * ((100vw - 320px) / (1280 - 320))), 20px)
     align-items: center
     min-height: 84px
     background-color: $color-3B3B3B
