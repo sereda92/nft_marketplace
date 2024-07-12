@@ -887,6 +887,114 @@ body
     background-color: $color-2B2B2B
 .hidden 
     display: none
+// ------------------rankings--------------------
+.rankings
+    padding-top: clamp(40px, calc(40px + (80 - 40) * ((100vw - 320px) / (1280 - 320))), 80px)
+    padding-bottom: clamp(30px, calc(30px + (40 - 30) * ((100vw - 320px) / (1280 - 320))), 40px)
+.rankings__title
+    padding-bottom: 80px
+    h2
+        margin-bottom: 20px
+
+
+
+
+
+.rankings__list
+    .filter-btn
+        font-size: 22px
+        color: $color-858584
+        font-weight: 600
+        width: 25%
+        // margin: 0 10px
+        padding: 14.5px 0
+        cursor: pointer
+        // border: 1px solid #ccc
+        // background-color: #f9f9f9
+        border-bottom: 1px solid transparent
+    .filter-buttons 
+        display: flex
+        justify-content: space-between
+
+.fil__num
+    width: 30px
+    text-align: left
+    color: $color-858584
+    
+
+.employee
+    .fil__num
+        padding: 4px 10px
+        background-color: $color-2B2B2B
+        border-radius: 50%
+
+.fil__artist
+    width: 100%
+    text-align: left
+    color: $color-858584
+.__block
+    display: flex
+    align-items: center
+    gap: 20px
+    img
+        width: 60px
+        height: 60px
+.fil__change
+    text-align: left
+    width: 160px
+    color: $color-858584
+.fil__sold
+    text-align: left
+    width: 160px
+    color: $color-858584
+.fil__volume
+    text-align: left
+    width: 160px
+    color: $color-858584
+
+.filter-btn.active 
+    color: #fff
+    border-bottom: 1px solid $color-858584
+
+.rankings__user
+    margin-top: 40px
+
+.ranking__user_title
+    gap: 20px
+    height: 46px
+    border: 1px solid $color-858584
+    border-radius: 20px
+    padding: 12px 20px
+    display: flex
+#employee-list 
+    display: flex
+    flex-direction: column
+    gap: 20px
+    margin-top: 20px
+    
+    // flex-wrap: wrap
+    // justify-content: center
+.gr_col
+    color: #00AC4F
+.wh_col
+    color: #fff
+
+.employee 
+    display: flex
+    gap: 20px
+    padding: 12px 20px
+    align-items: center
+    min-height: 84px
+    background-color: $color-3B3B3B
+    border-radius: 20px
+    // border: 1px solid #ccc
+    // padding: 10px
+    // margin: 10px
+    width: 100%
+    text-align: center
+    // display: none
+
+
 // ----------------------------------------------
 
 

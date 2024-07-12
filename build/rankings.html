@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="./css/main.css">
     <title>main page</title>
@@ -48,34 +50,66 @@
 </header>
 
         <main class="main">
-            <section class="wallet__page">
-                <div class="wallet__img">
-                    <img src="./img/cosmos.jpg" alt="cosmos">
-                </div>
-                <div class="wallet__block">
-                    <div class="wallet_title">
-                        <h2>Connect wallet</h2>
-                        <h4>Choose a wallet you want to connect. There are several wallet providers.</h4>
+            <div class="__container">
+                <section class="rankings">
+                    <div class="rankings__title">
+                        <h2>Top Creators</h2>
+                        <h5>Check out top ranking NFT artists on the NFT Marketplace.</h5>
                     </div>
-                    <div class="wallet__block_items">
-                        <div class="wallet__block_item">
-                            <a href="#" class="wallet__block_link">
-                                <img src="./img/icons/Metamask.png" alt="Metamask">
-                                Metamask</a>
+                    <div class="rankings__list">
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="today">Today</button>
+                            <button class="filter-btn" data-filter="week">This Week</button>
+                            <button class="filter-btn" data-filter="month">This Month</button>
+                            <button class="filter-btn" data-filter="all">All Time</button>
                         </div>
-                        <div class="wallet__block_item">
-                            <a href="#" class="wallet__block_link">
-                                <img src="./img/icons/WalletConnect.png" alt="WalletConnect">
-                                Wallet Connect</a>
+                        <div class="rankings__user">
+                            <div class="ranking__user_title">
+                                <p class="fil__num">#</p>
+                                <p class="fil__artist">Artist</p>
+                                <p class="fil__change">Change</p>
+                                <p class="fil__sold">NFTs Sold</p>
+                                <p class="fil__volume">Volume</p>
+                            </div>
+                            <div id="employee-list">
+                                <div class="employee" data-filter="today">
+                                    <p class="fil__num">1</p>
+                                    <div class="fil__artist __block">
+                                        <img src="./img/avatars/avatar-1.png" alt="">
+                                        <p class="wh_col">Jaydon Ekstrom Bothman</p>
+                                    </div>
+                                    <p class="fil__change gr_col">+1.41%</p>
+                                    <p class="fil__sold wh_col">602</p>
+                                    <p class="fil__volume wh_col">12.4 ETH</p>
+                                </div>
+                                <div class="employee" data-filter="today">Employee 2 - Today</div>
+                                <div class="employee" data-filter="today">Employee 3 - Today</div>
+                                <div class="employee" data-filter="today">Employee 4 - Today</div>
+                                <div class="employee" data-filter="today">Employee 5 - Today</div>
+    
+                                <div class="employee" data-filter="week">Employee 6 - This Week</div>
+                                <div class="employee" data-filter="week">Employee 7 - This Week</div>
+                                <div class="employee" data-filter="week">Employee 8 - This Week</div>
+                                <div class="employee" data-filter="week">Employee 9 - This Week</div>
+                                <div class="employee" data-filter="week">Employee 10 - This Week</div>
+    
+                                <div class="employee" data-filter="month">Employee 11 - This Month</div>
+                                <div class="employee" data-filter="month">Employee 12 - This Month</div>
+                                <div class="employee" data-filter="month">Employee 13 - This Month</div>
+                                <div class="employee" data-filter="month">Employee 14 - This Month</div>
+                                <div class="employee" data-filter="month">Employee 15 - This Month</div>
+    
+                                <div class="employee" data-filter="all">Employee 16 - All Time</div>
+                                <div class="employee" data-filter="all">Employee 17 - All Time</div>
+                                <div class="employee" data-filter="all">Employee 18 - All Time</div>
+                                <div class="employee" data-filter="all">Employee 19 - All Time</div>
+                                <div class="employee" data-filter="all">Employee 20 - All Time</div>
+                            </div>
                         </div>
-                        <div class="wallet__block_item">
-                            <a href="#" class="wallet__block_link">
-                                <img src="./img/icons/Coinbase.png" alt="Coinbase">
-                                Coinbase</a>
-                        </div>
+                        
                     </div>
-                </div>
-            </section>
+                </section>
+            </div>
         </main>
         <footer class="footer">
     <div class="__container">
@@ -151,6 +185,37 @@
     </div>
 </footer>
     </div>
+
+
+
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            function filterEmployees(filter) {
+                if (filter === 'all') {
+                    $('.employee').show();
+                } else {
+                    $('.employee').hide();
+                    $(`.employee[data-filter="${filter}"]`).show();
+                }
+            }
+
+            $('.filter-btn').click(function() {
+                $('.filter-btn').removeClass('active');
+                $(this).addClass('active');
+                const filter = $(this).data('filter');
+                filterEmployees(filter);
+            });
+
+            // Load initial data
+            filterEmployees('today');
+        });
+
+
+    </script>
+
     <script src="/js/index.bundle.js"></script>
 </body>
 
