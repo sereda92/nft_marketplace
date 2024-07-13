@@ -1,7 +1,20 @@
+@import './_variables.sass'   
+    
 .burger
-    height: 100px
-    position: relative
+    height: 100vh
+    position: fixed
+    top: 72px
+    // display: none
+    opacity: 0
+    left: 100%
     z-index: 100
+    transition: all .6s ease
+
+.burger__active
+    // display: block
+    left: 0
+    transition: all .6s ease
+    opacity: 1
 
 .burger__btn
     display: none
@@ -9,7 +22,9 @@
     justify-content: space-between
     width: 18px
     height: 12px
+
     span
+        transition: all .6s ease
         width: 18px
         height: 1.5px
         background-color: #fff
@@ -20,9 +35,28 @@
             width: 13px
             
 
+.burger__btn_active
+    span
+        &:nth-child(1)
+            width: 100%
+            transform: rotate(45deg) translate(5px, 5px)
+        &:nth-child(2)
+            opacity: 0
+        &:nth-child(3)
+            width: 100%
+            transform: rotate(-45deg) translate(2px, -2px)
+
+
+.burger__nav
+    position: relative
+    height: 100%
+    width: 100vw
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
 .main_active
-    // transform: rotate(-90deg)
-    transform: scaleX(-1)
+    transform: translateX(-100%)
     // transform-origin: top
     pointer-events: none
     opacity: 0
@@ -31,3 +65,28 @@
 .burger__list
     display: flex
     flex-direction: column
+    align-items: center
+    margin-top: 30%
+    // justify-content: center
+    width: 100%
+    height: 100%
+    gap: 50px
+
+.burger__item
+    display: block
+    width: 90%
+    text-align: center
+    &:not(:last-child)
+        border-bottom: 1px solid $color-3B3B3B
+        padding-bottom: 15px
+
+.burger__link
+    // width: 100%
+    font-size: 22px
+    font-weight: 600
+    text-transform: uppercase
+
+.burger__button
+    width: 100% !important
+    
+    

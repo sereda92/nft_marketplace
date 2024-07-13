@@ -10,52 +10,7 @@ a
 
 button
     cursor: pointer
-//----font-----
-// Light: font-weight: 300
-// Normal (Regular): font-weight: 400
-// Medium: font-weight: 500
-// Semi Bold (Demi Bold): font-weight: 600
-// Bold: font-weight: 700
-// Extra Bold (Ultra Bold): font-weight: 800
-// Black (Heavy): font-weight: 900
 
-// .work-sans-<uniquifier>
-//   font-family: "Work Sans", sans-serif
-//   font-optical-sizing: auto
-//   font-weight: <weight>
-//   font-style: normal
-
-// .space-mono-regular 
-//     font-family: "Space Mono", monospace
-//     font-weight: 400
-//     font-style: normal
-
-
-// .space-mono-bold 
-//     font-family: "Space Mono", monospace
-//     font-weight: 700
-//     font-style: normal
-
-
-// .space-mono-regular-italic 
-//     font-family: "Space Mono", monospace
-//     font-weight: 400
-//     font-style: italic
-
-
-// .space-mono-bold-italic 
-//     font-family: "Space Mono", monospace
-//     font-weight: 700
-//     font-style: italic
-
-// @font-face 
-//     font-family: 'icon-font'
-//     src: url('./fonts/icomoon.eot')
-//     src: url('./fonts/icomoon.eot') format('embedded-opentype'),
-//          url('./fonts/icomoon.woff') format('woff'),
-//          url('./fonts/icomoon.ttf') format('truetype')
-    // font-weight: normal
-    // font-style: normal
 
 @font-face 
     font-family: 'icomoon'
@@ -194,6 +149,9 @@ body
     font-size: 16px
     font-family: "Work Sans", sans-serif !important
     color: #fff
+    background-color: #2B2B2B
+.body_active
+    overflow: hidden
 
 .wrapper
     max-width: 1280px
@@ -202,10 +160,30 @@ body
     display: flex
     flex-direction: column
     background-color: #2B2B2B
+    overflow: hidden
+    border-left: 1px solid $color-3B3B3B
+    border-right: 1px solid $color-3B3B3B
+    position: relative
+    &::after,
+    &::before
+        content: ''
+        height: 100%
+        width: 1px
+        background-color: $color-3B3B3B
+        position: absolute
+        display: inline-block
+        top: 0
+        z-index: 1
+    &::after
+        left: 33.33%
+    &::before
+        right: 33.33%
 
 .main
     flex: 1 1 auto
-    transition: all 1s ease
+    transition: all .6s ease
+    position: relative
+    z-index: 10
     // margin: 80px 0 0 0
     
 
@@ -838,6 +816,7 @@ body
     padding-bottom: clamp(40px, calc(40px + (80 - 40) * ((100vw - 320px) / (1280 - 320))), 80px)
 .input_search_wrap
     position: relative
+    background-color: #2B2B2B
     span
         position: absolute
         top: 50%
@@ -893,7 +872,7 @@ body
     padding-top: clamp(40px, calc(40px + (80 - 40) * ((100vw - 320px) / (1280 - 320))), 80px)
     padding-bottom: clamp(30px, calc(30px + (40 - 30) * ((100vw - 320px) / (1280 - 320))), 40px)
 .rankings__title
-    padding-bottom: 80px
+    padding-bottom: clamp(40px, calc(40px + (80 - 40) * ((100vw - 320px) / (1280 - 320))), 80px)
     h2
         margin-bottom: 20px
 
