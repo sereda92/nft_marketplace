@@ -76,10 +76,13 @@
                         <h1>Discover Digital art & Collect NFTs</h1>
                         <h5>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</h5>
                         <div class="main_info">
-                            <button class="btn_style">
-                                <span class="icon-RocketLaunch"></span>
-                                Get Started
-                            </button>
+                            <div class="header__item hidden-hover">
+                                <a href="#" class="header__button btn_style main__btn event__btn">
+                                    <span class="icon-RocketLaunch"></span>
+                                    Get Started
+                                    <div class="btn__hover"></div>
+                                </a>
+                            </div>
                             <div class="main__section-list">
                                 <div>
                                     <h4>240k+</h4>
@@ -129,7 +132,13 @@
                                 <div class="other__img__wrap">
                                     <img src="./img/trending-collection/bear.jpg" alt="bear">
                                 </div>
-                                <button class="btn_style">1025+</button>
+                                <div class="header__item hidden-hover">
+                                    <a href="#" class="header__button btn_style main__btn event__btn">
+                                        1025+
+                                        <div class="btn__hover other_btn__hover"></div>
+                                    </a>
+                                </div>
+                                <!-- <button class="btn_style">1025+</button> -->
                             </div>
                             <div class="section-card__title">
                                 <h5>Space Walking</h5>
@@ -150,7 +159,13 @@
                                 <div class="other__img__wrap">
                                     <img src="./img/trending-collection/mushroom_3.jpg" alt="mushroom_3">
                                 </div>
-                                <button class="btn_style">1025+</button>
+                                <!-- <button class="btn_style">1025+</button> -->
+                                <div class="header__item hidden-hover">
+                                    <a href="#" class="header__button btn_style main__btn event__btn">
+                                        1025+
+                                        <div class="btn__hover other_btn__hover"></div>
+                                    </a>
+                                </div>
                             </div>
                             <div class="section-card__title">
                                 <h5>Space Walking</h5>
@@ -171,7 +186,13 @@
                                 <div class="other__img__wrap">
                                     <img src="./img/trending-collection/robot_3.jpg" alt="robot_3">
                                 </div>
-                                <button class="btn_style">1025+</button>
+                                <!-- <button class="btn_style">1025+</button> -->
+                                <div class="header__item hidden-hover">
+                                    <a href="#" class="header__button btn_style main__btn event__btn">
+                                        1025+
+                                        <div class="btn__hover other_btn__hover"></div>
+                                    </a>
+                                </div>
                             </div>
                             <div class="section-card__title">
                                 <h5>Space Walking</h5>
@@ -804,7 +825,15 @@
     window.addEventListener('resize', moveMainInfo);
     window.addEventListener('DOMContentLoaded', moveMainInfo);
     </script>
-
+    <script>
+        const colBtns = document.querySelectorAll('.event__btn')
+        function colBtnDef (e){
+            e.preventDefault()
+        }
+        colBtns.forEach((colBtn) => {
+            colBtn.addEventListener('click', colBtnDef)
+        })
+    </script>
     <script src="/js/index.bundle.js"></script>
 </body>
 
